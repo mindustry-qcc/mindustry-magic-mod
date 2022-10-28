@@ -1,0 +1,27 @@
+{ 
+    "type":"GenericCrafter", 
+    "name":"魔力透镜制造场", 
+    "description": "通过魔力使玻璃反射出魔力弹", 
+    "size":3, 
+    "updateEffect": "smeltsmoke", 
+    "outputItem": 
+        {"item":"魔力透镜","amount":1}, 
+    "consumes":{ 
+        "power":10, 
+        "items":{ 
+            "items":[ 
+                {"item":"sand","amount":10}, 
+                {"item":"瓶装魔力","amount":10},
+                ] 
+            } 
+        }, 
+    "requirements":[ 
+        {"item":"临界燃煤","amount":50}, 
+        {"item":"lead","amount":100} 
+        ], 
+    "craftTime":100, 
+    "health":500, 
+    "itemCapacity":100, 
+    "research":"duo", 
+    "category":"crafting" 
+}

@@ -1,0 +1,28 @@
+{ 
+    "type":"GenericCrafter", 
+    "name":"高压仓", 
+    "description": "用高温高压使碳变为临界态", 
+    "size":3, 
+    "updateEffect": "smeltsmoke", 
+    "outputItem": 
+        {"item":"临界燃煤","amount":1}, 
+    "consumes":{ 
+        "power":10, 
+        "items":{ 
+            "items":[ 
+                {"item":"coal","amount":50}, 
+                ] 
+            } 
+        }, 
+    "requirements":[ 
+        {"item":"copper","amount":500}, 
+        {"item":"thorium","amount":100}, 
+        {"item":"titanium","amount":100}, 
+        {"item":"lead","amount":100} 
+        ], 
+    "craftTime":100, 
+    "health":500, 
+    "itemCapacity":100, 
+    "research":"duo", 
+    "category":"crafting" 
+}

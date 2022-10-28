@@ -1,0 +1,10 @@
+{
+    "type": "resource",
+    "name": "魔力透镜",
+    "description": "通过魔力对玻璃的影响时玻璃可以折射出有伤害的魔力弹",
+    "color": "FFFFFF"
+    "radioactivity": 0
+    "explosiveness": 0
+    "flammability": 0
+    "research": "copper"
+}

@@ -1,0 +1,103 @@
+{
+	"size": 4,
+	"name":"魇镜",
+	"description":"通过输入高密度的魔力驱动电力发射出魔法激光但是如果需要二次发射则需要长时间冷却",
+	"category": "turret",
+	"type":"LaserTurret",
+	"health": 1420,
+	"reload": 500,
+	"range": 395,
+	"shake":5,
+	"targetAir" : true, 
+	"shootDuration":300,
+	"targetGround" : true,
+	"shootCone" : 50,
+	"shootEffect":"shootBigSmoke2"
+	"recoil" : 4,
+	"rotateSpeed": 2,
+	"shootSound" : "lasershoot",
+	"lightColor":"FFFFFF"
+	"consumes": {
+	     "power": 100,
+	     "coolant": {
+           "amount": 0.2,
+           "optional": true
+          }
+    },
+    
+	"hasPower" : true,
+	"liquidCapacity": 20,
+	"shootType" : {
+      "type" : "ContinuousLaserBulletType",
+      "length":400,
+      "backColor":"FFFFFF",
+      "damage": 500,
+      "hitEffect":"hitMeltdown",
+      "hitColor":"FFFFFF",
+      "incendSpread":5,
+      "incendChance":0.4,
+      "ammoMultiplier":1,
+      "incendAmount":1,
+        "trailColor":"FFFFFF",
+        "trailEffect": {
+		"type": "MultiEffect",
+		"lifetime": 100,
+		"layer": 110,
+		"effects": [
+			{  
+    "type": "ParticleEffect",
+    "particles": 8,
+    "sizeFrom": 6,
+    "sizeTo": 12,
+    "length": 10,
+    "spin":8,
+    "lifetime": 120,
+    "colorFrom": "FFFFFF",
+    "colorTo": "FFFFFF",
+	               }
+	   ]
+}
+      },
+      
+          "drawer":{
+	    "type":"DrawTurret",
+	    "parts":[
+	    {
+	        "type":"RegionPart",
+	        "suffix":"-左",
+	        "mirror":false,
+	        "moveX":-8,
+	        "moveY":-10,
+	        "moveRot":-30,
+	        "layer":100,
+	        "under":false
+	        },
+	    {
+	        "type":"RegionPart",
+	        "suffix":"-右",
+	        "mirror":false,
+	        "moveX":8,
+	        "moveY":-10,
+	        "moveRot":30,
+	        "layer":100,
+	        "under":false
+	        }
+		    {
+	        "type":"RegionPart",
+	        "suffix":"-前盖",
+	        "mirror":false,
+	        "moveX":0,
+	        "moveY":-10,
+	        "layer":100,
+	        "under":false
+	        }
+	    ]
+	},
+      
+	"requirements": [
+		魔力透镜/2,
+		铜铅合金/100,
+		临界燃煤/300
+	],	
+       "research": "text"
+}

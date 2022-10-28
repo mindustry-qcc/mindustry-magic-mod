@@ -1,0 +1,39 @@
+{ 
+    "type":"GenericCrafter", 
+    "name":"魔力提取场", 
+    "description": "使用钛作为介质提取空气中的魔力", 
+    "size":3, 
+    "updateEffect":{
+        "type": "WaveEffect",
+        "lifetime": 50,
+        "sizeFrom": 2,//开始大小
+        "sizeTo": 12,//结束大小
+        "strokeFrom": 8,
+        "strokeTo": -1,
+        "colorFrom": "FFCCFF",
+        "colorTo": "CC6699"
+      }
+    "outputLiquid": 
+        {"liquid":"魔力原浆","amount":10}, 
+    "consumes":{ 
+        "power":10, 
+        "items":{ 
+            "items":[ 
+                {"item":"titanium","amount":10}, 
+                ] 
+            } 
+        }, 
+        
+    "requirements":[ 
+        {"item":"copper","amount":500}, 
+        {"item":"thorium","amount":100}, 
+        {"item":"titanium","amount":100}, 
+        {"item":"lead","amount":100} 
+        ], 
+    "craftTime":100, 
+    "health":500, 
+    "itemCapacity":100, 
+    "liquidCapacity":100, 
+    "research":"duo", 
+    "category":"crafting" 
+}

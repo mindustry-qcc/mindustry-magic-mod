@@ -1,0 +1,10 @@
+{
+    "type": "resource",
+    "name": "铜铅合金",
+    "description": "十分的到位",
+    "color": "FFA500"
+    "radioactivity": 0
+    "explosiveness": 0
+    "flammability": 0
+    "research": "copper"
+}

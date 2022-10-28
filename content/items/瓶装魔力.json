@@ -1,0 +1,10 @@
+{
+    "type": "material",
+    "name": "瓶装魔力",
+    "description": "魔力危险系数不亚于辐射物质，所以无法放入核心",
+    "color": "008000"
+    "radioactivity": 0
+    "explosiveness": 100
+    "flammability": 100
+    "research": "copper"
+}

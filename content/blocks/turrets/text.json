@@ -1,0 +1,184 @@
+{
+	"size": 3,
+	"name":"靈散",
+	"description":"通过特制的魔力储存系统发射出高密度的魔力弹偏移数值偏大",
+	"category": "turret",
+	"type":"PowerTurret",
+	"health": 420,
+	"reload": 1,
+	"range": 240,
+	"inaccuracy": 10,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"targetHealing": false,
+	"shootCone" : 2,
+	"recoil" : 0,
+	"rotateSpeed": 8,
+	"shootSound" : "lasershoot",
+	"shootEffect":{
+	 "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 2,//开始大小
+        "sizeTo": 4,//结束大小
+        "strokeFrom": 6,
+        "strokeTo": 3,
+        "colorFrom": "FFCCFF",
+        "colorTo": "FFFFFF"							
+	}
+	"lightColor":"ffccff"
+	"consumes": {
+	     "power": 20,
+	     "coolant": {
+           "amount": 0.2,
+           "optional": true
+          }
+    },
+    
+	"hasPower" : true,
+	"liquidCapacity": 20,
+	"shootType" : {
+      "type" : "LaserBoltBulletType",
+      "speed":10,
+      "lifetime":48,
+      "width":5,
+      "height":10,
+      "ammoMultiplier": 1, 
+      "homingPower":0.05,
+      "homingRange":120,
+      "backColor":"FFC0CB",
+      "damage": 50
+      "hitEffect":{
+        "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 7,//开始大小
+        "sizeTo": 2,//结束大小
+        "strokeFrom": 6,
+        "strokeTo": 2,
+        "colorFrom": "FFCCFF",
+        "colorTo": "CC6699"
+        }
+        
+        "trailColor":"663366",
+        "trailEffect": {
+		"type": "MultiEffect",
+		"lifetime": 32,
+		"layer": 105,
+		"effects": [
+			{  
+    "type": "ParticleEffect",
+    "particles": 5,
+    "sizeFrom": 10,
+    "sizeTo": 30,
+    "length": 120,
+    "spin":8
+    "lifetime": 120,
+    "sizeInterp": "pow5In",
+    "interp":"circleOut"
+    "colorFrom": "FFCCFF",
+    "colorTo": "CC6699",
+    "cone": 360
+	               }
+	   ]
+}
+      },
+      
+          "drawer":{
+	    "type":"DrawTurret",
+	    "parts":[
+	    {
+	        "type":"RegionPart",
+	        "suffix":"-左",
+	        "mirror":false,
+	        "moveX":-5,
+	        "moveY":-6,
+	        "moveRot":-30,
+	        "layer":101,
+	        "under":true
+	        },
+	    {
+	        "type":"RegionPart",
+	        "suffix":"-右",
+	        "mirror":false,
+	        "moveX":5,
+	        "moveY":-6,
+	        "moveRot":30,
+	        "layer":101,
+	        "under":true
+	        }
+		        {
+			"type": "HaloPart",
+			"hollow": true,//空心
+			"mirror": false,
+			"tri": true,//是否三角形
+			"x": 0,
+			"y": -8,
+			"shapeRotation": 0,//图形初始角度
+			"moveX": 0,
+			"moveY": 0,
+			"shapeMoveRot": 0,
+			"shapes": 6,//围绕个数
+			"sides": 3,//边数
+			"radius": 3,//半径/粗细
+			"stroke": 10,//粗细
+			"strokeTo": -1,
+			"triLength": 0,//初始长度
+			"triLengthTo": 6,//最终长度
+			"haloRadius": 12,//围绕半径
+			"haloRadiusTo": -1,//最终围绕半径
+			"haloRotateSpeed": 1,//公转速度
+			"haloRotation": 0,//环初始角度
+			"rotateSpeed": 0,//自转速度
+			"color": "ffccff",
+			"colorTo": "ffccff",
+			"layer": 110
+		    },
+		    {
+			"type": "ShapePart",
+			"x": 0,
+			"y": -8,
+			"circle": true,
+			"hollow": true,
+			"radius": 4,
+			"stroke": 0,
+			"strokeTo": 3,
+			"color": "ffccff",
+			"colorTo": "FFC0CB",
+			"layer": 110
+			},
+	        {
+			"type": "HaloPart",
+			"hollow": true,//空心
+			"mirror": false,
+			"tri": true,//是否三角形
+			"x": 0,
+			"y": -8,
+			"shapeRotation": 3,//图形初始角度
+			"moveX": 0,
+			"moveY": 0,
+			"shapeMoveRot": 0,
+			"shapes": 4,//围绕个数
+			"sides": 3,//边数
+			"radius": 3,//半径/粗细
+			"stroke": 1,//粗细
+			"strokeTo": 3,
+			"triLength": 0,//初始长度
+			"triLengthTo": 3,//最终长度
+			"haloRadius": 6,//围绕半径
+			"haloRadiusTo": -1,//最终围绕半径
+			"haloRotateSpeed": 3,//公转速度
+			"haloRotation": 0,//环初始角度
+			"rotateSpeed": 3,//自转速度
+			"color": "ffccff",
+			"colorTo": "FFC0CB",
+			"layer": 110
+		    },
+	    ]
+	},
+      
+	"requirements": [
+		魔力透镜/1,
+		铜铅合金/10,
+		临界燃煤/30
+	],	
+       "research": "duo"
+}

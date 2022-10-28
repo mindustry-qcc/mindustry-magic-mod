@@ -1,0 +1,18 @@
+{
+	"name": "装液器",
+	"description": "灌注液体至瓶中",
+	"health": 500,
+	"size": 2,
+	"hasPower": true,
+	"hasItems": true,
+	"hasliquids":true,
+	"liquidCapacity":120,
+       "itemCapacity":120,
+	"requirements": [
+ 	{ "item": "titanium", "amount": 80 },
+ 	{ "item": "metaglass", "amount":30 },
+	{ "item": "silicon", "amount": 30 }
+	],
+	"category": "crafting",
+	"research":"duo"
+}

@@ -1,0 +1,10 @@
+{
+    "type": "resource",
+    "name": "临界燃煤",
+    "description": "使用高温高压让碳元素呈现临界态",
+    "color": "000000"
+    "radioactivity": 0
+    "explosiveness": 100
+    "flammability": 100
+    "research": "copper"
+}

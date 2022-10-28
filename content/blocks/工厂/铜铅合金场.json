@@ -1,0 +1,27 @@
+{ 
+    "type":"GenericCrafter", 
+    "name":"铜铅合金场", 
+    "description": "用高温来融化铜铅生产铜铅合金", 
+    "size":3, 
+    "updateEffect": "smeltsmoke", 
+    "outputItem": 
+        {"item":"铜铅合金","amount":1}, 
+    "consumes":{ 
+        "power":10, 
+        "items":{ 
+            "items":[ 
+                {"item":"copper","amount":10}, 
+                {"item":"lead","amount":10},
+                ] 
+            } 
+        }, 
+    "requirements":[ 
+        {"item":"copper","amount":500}, 
+        {"item":"lead","amount":100} 
+        ], 
+    "craftTime":100, 
+    "health":500, 
+    "itemCapacity":100, 
+    "research":"duo", 
+    "category":"crafting" 
+}

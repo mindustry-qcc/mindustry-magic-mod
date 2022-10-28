@@ -1,0 +1,71 @@
+{
+	"size": 2,
+	"name":"轨道测试",
+	"description":"text",
+	"category": "turret",
+	"type":"ChargeTurret",
+	"health": 1000000,
+	"range": 10000,
+	"inaccuracy": 10000,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"targetHealing": true,
+	"chargeTime":120,
+	"rotateSpeed": 50,
+	"shootSound" : "lasershoot",
+	"consumes": {
+	     "power": 200,
+	     "coolant": {
+           "amount": 0.2,
+           "optional": true
+          }
+    },
+    
+	"hasPower" : true,
+	"liquidCapacity": 20,
+	"shootType" : {
+      "type" : "LaserBoltBulletType",
+      "speed":1,
+      "lifetime":1000,
+      "width":5,
+      "height":10,
+      "ammoMultiplier": 1, 
+      "homingPower":10,
+      "homingRange":10000,
+      "damage": 100000
+     },
+          "drawer":{
+	    "type":"DrawTurret",
+	    "parts":[
+            {
+                "type": "HaloPart",
+                "progress": {
+                    "type": "charge",
+                    "op": "delay",
+                    "amount": 0.1
+                },
+                "tri": true,
+                "color": "FFFFAA",
+                "shapes": 1,
+                "triLength": 0,
+                "triLengthTo": 280,
+                "radius": 3,
+                "mirror": true,
+                "under": true,
+                "sides": 10,
+                "stroke": 0,
+                "strokeTo": 3,
+                "shapeRotation": 0,
+                "haloRotation": 0,
+                "layer": 110,
+                "x": 13,
+                "y": -5
+            },
+	    ]
+	},
+      
+	"requirements": [
+		copper/1,
+	],	
+       "research": "duo"
+}
