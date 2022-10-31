@@ -1,0 +1,121 @@
+{
+	"size": 3,
+	"name":"轨道炮",
+	"description":"text",
+	"category": "turret",
+	"type":"ItemTurret",
+	"health": 1000,
+	"range": 100,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"maxAmmo":50,
+	"rotateSpeed": 50,
+	"shootSound" : "shootSmite",
+	"liquidCapacity": 200,
+          "drawer":{
+	    "type":"DrawTurret",
+	    "parts":[
+	{
+	        "type":"RegionPart",
+	        "suffix":"-左",
+	        "mirror":false,
+	        "moveX":-3,
+		 "moveY":5,
+	      //  "layer":110,
+	        "under":false
+	        },
+		{
+	        "type":"RegionPart",
+	        "suffix":"-右",
+	        "mirror":false,
+	        "moveX":3,
+	        "moveY":5,
+	        //"layer":110,
+	        "under":false
+	        },
+		{
+	        "type":"RegionPart",
+	        "suffix":"-左下",
+	        "mirror":false,
+	        "moveX":-4,
+	        "moveY":-5,
+	        "layer":100,
+	        "under":true
+	        },
+	{
+	        "type":"RegionPart",
+	        "suffix":"-右下",
+	        "mirror":false,
+	        "moveX":4,
+	        "moveY":-5,
+	        "layer":100,
+	        "under":true
+	        },
+	    ]
+	},
+	
+"ammoTypes":{
+      "surge-alloy":{
+    "type":"BasicBulletType",
+    "width":17,
+    "height":21,
+    "hitSize"8,
+    "shootEffect":{
+      "type":"MultiEffect",
+      "effects":[
+        {
+          "type":"WaveEffect",
+          "colorFrom":"FFFFFF",
+          "colorTo":"FFCCFF",
+          "lifetime":12,
+          "sizeTo":20,
+          "strokeFrom":3,
+          "strokeTo":0.3,
+          }  
+        ]
+       },
+                "smokeEffect":"shootSmokeSmite",
+                "ammoMultiplier":1,
+                "pierceCap":4,
+                "pierce":true,
+                "pierceBuilding":true,
+                "frontColor":"FFFFFF",
+                "trailWidth":2.8,
+                "trailLength":9,
+                "hitEffect":"hitBulletColor",
+                "buildingDamageMultiplier":0.3,
+                    "despawnEffect":{
+      "type":"MultiEffect",
+      "effects":[
+        {
+          "type":"WaveEffect",
+          "colorFrom":"FFFFFF",
+          "colorTo":"FFCCFF",
+          "lifetime":12,
+          "sizeTo":30,
+          }  
+        ]
+       },
+                "trailRotation":true,
+                "trailEffect":"disperseTrail",
+                "trailInterval":3,
+                "intervalBullet":{
+                  "type":"LightningBulletType",
+                  "damage":30,
+                  "collidesAir":false,
+                  "ammoMultiplier":1,
+                  "lightningColor":"FFCCFF",
+                  "lightningLength":5,
+                  "lightningLengthRand":10,     
+                  "buildingDamageMultiplier":0.8,
+                  
+                  }
+      }
+  }
+	
+      
+	"requirements": [
+		copper/1,
+	],	
+       "research": "duo"
+}
